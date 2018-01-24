@@ -1,3 +1,4 @@
+
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -78,9 +79,9 @@ export default {
         },
       ],
       msg: 'Welcome to my modified Vue.js App',
-    }
+    };
   },
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
