@@ -1,8 +1,8 @@
 
-<script>
 import axios from 'axios';
 
 const api = axios.create({
+  // could be set by settings in  window.SMP_CONFIG
   baseURL: `https://api-qa.fairgarage.de/smp/api/`,
   headers: {
     // Authorization: 'Bearer {token}'
@@ -12,14 +12,4 @@ const api = axios.create({
   },
 });
 
-export default {
-  name: 'Api',
-  data() {
-    return {};
-  },
-
-  listPartQualities(params) {
-    return api.get('/partqualities', {params});
-  },
-};
-</script>
+export default api;

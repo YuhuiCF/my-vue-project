@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import api from './Api';
+import api from '../services/api';
 
 export default {
   name: 'HelloWorld2',
